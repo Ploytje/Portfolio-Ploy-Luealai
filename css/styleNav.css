@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: verdana;
+	color: white;
+	background-color: black;
+}
+.logo img {
+	width: 10%;
+	float: left;
+	margin: 2%;
+}
+nav ul li {
+	list-style: none;
+	float: left;
+	padding-left:8%;
+	font-size: 12pt;
+
+}
+nav ul {
+	margin:0;
+	margin-top: 4%;
+	
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+}
+header {
+	background-image: url(../image/20180617_175307MetOpacity.jpg) ;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+/*welkom*/
+.welkom {
+	margin-top: 18%;
+	margin-bottom: 5%;
+	margin-left: 2%;
+	color: black;
+}
+.welkom h1 {
+		font-size: 14pt;
+}
+.welkom h2 {
+		font-size: 12pt;
+}
+.welkom h2 a {
+		font-size: 12pt;
+}
+.welkom h3 {
+		font-size: 12pt;
+}
+.welkom a{
+		font-size: 14pt;
+		
+}
+.hire {
+	color: #2271b3;
+	border:outset #1b5a8f;
+	background-color: #b0d3f0;
+	opacity: 0.8;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 10px;
+}
+.tools {
+	margin-top: 1%;
+}
+
+
+
+
+@media only screen and (min-width: 720px) and (max-width: 1023px){
+	body {
+		/*background-color: red;*/
+	}
+	nav ul li {
+		font-size: 20pt;
+	}
+	.logo img {
+		margin: 2%;
+	}
+	
+	
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	body {
+		/*background-color: yellow;*/
+		
+	}
+	.logo img {
+		width: 7%;
+		margin-left: 2%;
+	}
+	nav ul li {
+		font-size: 22pt;
+	}
+	nav ul {
+		margin-top: 3%;
+	}
+	header {
+		background-size: 100% 100%;
+		
+	}
+	/*welkom*/
+	.welkom h1 {
+		font-size: 42pt;
+	}
+	.welkom h2, .welkom h2 a {
+		font-size: 32pt;
+
+	}
+	
+	
+	.welkom h3 {
+		font-size: 26pt;
+	}
+	.welkom a{
+		font-size: 20pt;
+	}
+	
+}
+
+@media only screen and (min-width: 1440px) {
+	body {
+		/*background-color: blue;*/
+	}
+	.logo img {
+		width: 5%;
+	}
+	nav ul li {
+		font-size: 24pt;
+	}
+	nav ul {
+		margin:0;
+		margin-top: 3%;
+	}
+	header {
+		background-size: cover;
+		background-attachment: fixed;
+		
+	}
+	/*welkom*/
+	.welkom h1 {
+		font-size: 52pt;
+	}
+	.welkom h2, .welkom h2 a {
+		font-size: 32pt;
+	}
+	
+	.welkom h3 {
+		font-size: 26pt;
+	}
+	.welkom a{
+		font-size: 22pt;
+	}
+
+}

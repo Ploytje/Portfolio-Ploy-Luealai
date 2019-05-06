@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+}
+figure img {
+	width: 100%;
+}
+.titleProjectKaas {
+	grid-area: titleKaas;
+	font-size: 22pt;
+	margin-bottom: 0;
+}
+
+.textKaas {
+	grid-area: textKaas;
+}
+.kaImgEen {
+	grid-area: imgEen;
+}
+.kaImgTwee {
+	grid-area: imgTwee;
+}
+.kaImgDrie {
+	grid-area: imgDrie;
+}
+.kaImgVier {
+	grid-area: imgVier;
+}
+.groupKaas {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-areas:
+	'titleKaas titleKaas' 
+	'textKaas textKaas'
+	'imgEen imgTwee'
+	'imgDrie imgVier';
+	grid-gap: 10px;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+	
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	
+	.titleProjectKaas {
+		font-size: 32pt;
+	}
+	.textKaas {
+		font-size: 14pt;
+	}
+	.groupKaas {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-areas:
+	'titleKaas titleKaas' 
+	'textKaas imgEen'
+	'imgTwee imgDrie'
+	'imgVier .';
+	grid-gap: 10px;
+	justify-content: center;
+	}
+
+}
+@media only screen and (min-width: 1440px) {
+	
+	.titleProjectKaas {
+		font-size: 36pt;
+	}
+	.textKaas {
+		font-size: 18pt;
+	}
+	.groupKaas {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-areas:
+	'titleKaas titleKaas' 
+	'textKaas imgEen'
+	'imgTwee imgDrie'
+	'imgVier .';
+	grid-gap: 10px;
+	justify-content: center;
+	}
+
+}

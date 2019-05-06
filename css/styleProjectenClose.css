@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: verdana;
+	color: white;
+	background-color: black;
+}
+.close a {
+  font-size: 45pt;
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: right;
+}

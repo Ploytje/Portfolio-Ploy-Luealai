@@ -1,0 +1,35 @@
+.sociaal img {
+	width: 6%;
+}
+.contact {
+	margin-left: 2%;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+	.sociaal img {
+	width: 4%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px)  {
+	.sociaal img {
+	width: 3%;
+	}
+	.contact {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 14pt;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	.sociaal img {
+		width: 2%;
+	}
+	.contact {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		
+}

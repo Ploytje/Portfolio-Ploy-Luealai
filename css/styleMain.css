@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	grid-area: head;
+	
+}
+main {
+	grid-area: main;
+	
+}
+footer {
+	grid-area: foot;
+	
+}
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	'head'
+	'main'
+	'foot';
+	grid-gap: 10px;
+}
+/*over mezelf*/
+.tools {
+	float: left;
+	padding-left: 2%;
+}
+
+.aboutMe {
+	/*background: rgba(0, 0, 0, 0.3);*/
+	background:black (0.5);
+	
+	
+}
+
+
+/*projecten*/
+
+.contentInterface, .contentKaas, .contentRide {
+  position: relative;
+/*  max-width: 800px;*/
+  margin: 0 auto;
+}
+.img {
+	margin-top: 4%;
+}
+
+.img img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+.contentInterface .naamInterface, .contentKaas .naamKaas, .contentRide .naamRide {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+	.work {
+		padding:30%;
+	}
+	.aboutMe {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.proj {
+		margin-left: 2%;
+	}
+	.contentInterface {
+		margin-top: -60%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px)  {
+	/*overmezelf*/
+	.aboutMe {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.aboutMe h1 {
+		font-size: 24pt;
+	}
+	.aboutMe p {
+		font-size: 14pt;
+	}
+
+	/*projecten*/
+	.contentInterface {
+		grid-area: interface;
+	}
+	.contentKaas {
+		grid-area: kaas;
+	}
+	.contentRide {
+		grid-area: ride;
+	}
+	.work {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		'interface kaas ride';
+		grid-gap: 10px;
+	}
+	.proj {
+		margin-left: 2%;
+	}
+
+}
+
+@media only screen and (min-width: 1440px) {
+	/*overmezelf*/
+	.aboutMe h1 {
+		font-size: 26pt;
+	}
+	.aboutMe p {
+		font-size: 16pt;
+	}
+	.contentInterface {
+		grid-area: interface;
+	}
+	.contentKaas {
+		grid-area: kaas;
+	}
+	.contentRide {
+		grid-area: ride;
+	}
+	.work {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		'interface kaas ride';
+		grid-gap: 10px;
+	}
+}
