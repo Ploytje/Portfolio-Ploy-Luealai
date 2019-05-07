@@ -1,4 +1,8 @@
-
+body {
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 5%;
+}
 figure img {
 	width: 100%;
 }

@@ -5,6 +5,9 @@ body {
 	font-family: verdana;
 	color: white;
 	background-color: black;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 5%;
 }
 .logo img {
 	width: 10%;
